@@ -7,6 +7,8 @@ Thanks for your stay in this repo. This project aims to multimodal sentiment det
 To carry out experiments with multiple data splits, as the evaluation protocol detailed in our paper (grid-search for each seed and 5 different seeds), you can use the following scripts:
 
 ## For MVSA_Single:
+
+```
 for seed in 13 21 42 87 100 #### random seeds for different train-test splits
 do
     for bs in 8   #### batch size for each GPU
@@ -27,8 +29,11 @@ do
         done
     done
 done
+```
 
 ##For MVSA_Multiple:
+
+```
 for seed in 13 21 42 87 100 #### random seeds for different train-test splits
 do
     for bs in 8   #### batch size for each GPU
@@ -49,3 +54,4 @@ do
         done
     done
 done
+```
