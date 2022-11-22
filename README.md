@@ -2,13 +2,18 @@
 
 Thanks for your stay in this repo. This project aims to multimodal sentiment detection in the few-shot setting. The paper can be found in [here](https://arxiv.org/abs/2211.06607).
 
+## For text modality:
+We employ roberta-large to text, roberta-large can also be replaced by bert-base, bert-large, roberta-base and distilbert-base (see [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) for details).
+## For image modality:
+We employ NF-Resnet50, you can download the pretrained weights from [https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/nf_resnet50_ra2-9f236009.pth].
+
 # Experiments with multiple runs
 
 To carry out experiments with multiple data splits, as the evaluation protocol detailed in our paper (grid-search for each seed and 5 different seeds), you can use the following scripts:
 
 ## For MVSA_Single:
 
-```
+``` python
 for seed in 13 21 42 87 100 #### random seeds for different train-test splits
 do
     for bs in 8   #### batch size for each GPU
@@ -33,7 +38,7 @@ done
 
 ## For MVSA_Multiple:
 
-```
+``` python
 for seed in 13 21 42 87 100 #### random seeds for different train-test splits
 do
     for bs in 8   #### batch size for each GPU
