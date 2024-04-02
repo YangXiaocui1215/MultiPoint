@@ -2,6 +2,10 @@
 
 Thanks for your stay in this repo. This project aims to multimodal sentiment detection in the few-shot setting. The paper can be found in [here](https://arxiv.org/abs/2211.06607).
 
+## Data
+
+You can download data from the [Google Drive](https://drive.google.com/file/d/1gsXi0x-rY1YOnDDWVJIjSWSFRiQtzRoE/view?usp=drive_link).
+
 ## For text modality:
 We employ roberta-large to text, roberta-large can also be replaced by bert-base, bert-large, roberta-base and distilbert-base (see [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) for details).
 ## For image modality:
